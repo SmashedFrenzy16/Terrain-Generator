@@ -36,13 +36,17 @@ y = 0         
 waffle.set_pixel(x, y, "blue") 
 for i in range(0, down):     
   waffle.set_pixel(x, y, "blue")     
-  y = y + 1 for i in range(0, left):     
-    waffle.set_pixel(x, y, "blue")     
-    x = x - 1 for i in range(0, down):     
-      waffle.set_pixel(x, y, "blue")     
-      y = y + 1 for i in range(0, (left * 2)):     
-        waffle.set_pixel(x, y, "blue")     
-        x = x + 1 while y < size:     
-          waffle.set_pixel(x, y, "blue")     
-          y = y + 1  
-          root.display()
+  y = y + 1 
+for i in range(0, left):     
+  waffle.set_pixel(x, y, "blue")     
+  x = x - 1 
+for i in range(0, down):     
+  waffle.set_pixel(x, y, "blue")     
+  y = y + 1 
+for i in range(0, (left * 2)):     
+  waffle.set_pixel(x, y, "blue")     
+  x = x + 1 
+while y < size:     
+  waffle.set_pixel(x, y, "blue")     
+  y = y + 1  
+root.display()
