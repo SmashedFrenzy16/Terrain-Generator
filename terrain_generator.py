@@ -1,9 +1,9 @@
 from guizero import *
 from  random import * 
 root = App()
-welcome_message = Text(root, text="Terrain generator")
+welcome_message = Text(root, text="Terrain Generator By @SmashedFrenzy16")
 size = 17
-waffle = Waffle(root ,height=size, width=size,pad=0,color="green") 
+waffle = Waffle(root ,height=size, width=size, pad=0, color="green") 
 down = randint(4, 8) 
 left = randint(2, 5) 
 # Coast 
