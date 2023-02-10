@@ -1,5 +1,6 @@
 from guizero import *
-from  random import * root = App()
+from  random import * 
+root = App()
 welcome_message = Text(root, text="Terrain generator")
 size = 17
 waffle = Waffle(root ,height=size, width=size,pad=0,color="green") 
